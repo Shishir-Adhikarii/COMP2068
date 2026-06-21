@@ -2,27 +2,19 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-    res.render('home', {
-        title: 'Home'
-    });
+  res.render('home', { title: 'Home' });
 });
 
 router.get('/about', function(req, res) {
-    res.render('about', {
-        title: 'About Me'
-    });
+  res.render('about');
 });
 
 router.get('/projects', function(req, res) {
-    res.render('projects', {
-        title: 'Projects'
-    });
+  res.render('projects');
 });
 
 router.get('/contact', function(req, res) {
-    res.render('contact', {
-        title: 'Contact Me'
-    });
+  res.render('contact');
 });
 
 module.exports = router;
